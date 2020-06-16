@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcD-sv-Xiz">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Core Live View Controller-->
+        <scene sceneID="HVS-ZB-wEb">
+            <objects>
+                <viewController id="fcD-sv-Xiz" customClass="BookCore_LiveViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rh2-0a-zph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="DNANew.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTz-Zh-ZfU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bua-Xd-PAn">
+                                <rect key="frame" x="248" y="617" width="111" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" title="Load in AR" image="arkit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gf8-wZ-clG" kind="show" id="ycP-uM-ri2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run this playground on an ARKit compatible device to see this scene in AR!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CG-6w-Q4d">
+                                <rect key="frame" x="8" y="599.5" width="359" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qaR-nP-dw0" firstAttribute="trailing" secondItem="bua-Xd-PAn" secondAttribute="trailing" constant="16" id="0Gl-r1-DhH"/>
+                            <constraint firstItem="qaR-nP-dw0" firstAttribute="bottom" secondItem="BTz-Zh-ZfU" secondAttribute="bottom" id="6rx-ip-nEe"/>
+                            <constraint firstItem="BTz-Zh-ZfU" firstAttribute="top" secondItem="qaR-nP-dw0" secondAttribute="top" id="IkU-bk-W2q"/>
+                            <constraint firstItem="qaR-nP-dw0" firstAttribute="trailing" secondItem="BTz-Zh-ZfU" secondAttribute="trailing" id="aaU-qo-NA3"/>
+                            <constraint firstAttribute="trailing" secondItem="9CG-6w-Q4d" secondAttribute="trailing" constant="8" id="d2Y-rd-Wer"/>
+                            <constraint firstItem="qaR-nP-dw0" firstAttribute="bottom" secondItem="9CG-6w-Q4d" secondAttribute="bottom" constant="25" id="jNM-6l-LQ4"/>
+                            <constraint firstItem="BTz-Zh-ZfU" firstAttribute="leading" secondItem="qaR-nP-dw0" secondAttribute="leading" id="kJe-wN-v8J"/>
+                            <constraint firstItem="9CG-6w-Q4d" firstAttribute="centerX" secondItem="Rh2-0a-zph" secondAttribute="centerX" id="mC5-Uf-nyb"/>
+                            <constraint firstItem="9CG-6w-Q4d" firstAttribute="leading" secondItem="Rh2-0a-zph" secondAttribute="leading" constant="8" id="sMs-gX-mfF"/>
+                            <constraint firstItem="qaR-nP-dw0" firstAttribute="bottom" secondItem="bua-Xd-PAn" secondAttribute="bottom" constant="20" id="yrr-cP-KKm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qaR-nP-dw0"/>
+                    </view>
+                    <connections>
+                        <outlet property="ARSupportLabel" destination="9CG-6w-Q4d" id="oau-LQ-8cR"/>
+                        <outlet property="loadARButton" destination="bua-Xd-PAn" id="i53-vH-FdB"/>
+                        <outlet property="sceneView" destination="BTz-Zh-ZfU" id="LpL-d3-gMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvi-wC-fap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="96"/>
+        </scene>
+        <!--Book CoreRNA Live View Controller-->
+        <scene sceneID="UIA-rq-qJP">
+            <objects>
+                <viewController storyboardIdentifier="RNALiveViewController" id="fqc-Da-jgJ" customClass="BookCore_RNALiveViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTE-Q4-BJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" playing="YES" sceneName="RNA.scn" translatesAutoresizingMaskIntoConstraints="NO" id="d02-A0-Jtn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run this playground on an ARKit compatible device to see this scene in AR!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xea-3z-sQs">
+                                <rect key="frame" x="8" y="604.5" width="359" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rj-re-vtZ">
+                                <rect key="frame" x="248" y="612" width="111" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" title="Load in AR" image="arkit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UDG-rl-Sbc" kind="show" id="6Na-t9-l8l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xea-3z-sQs" firstAttribute="centerX" secondItem="vTE-Q4-BJJ" secondAttribute="centerX" id="5zw-IZ-Uhm"/>
+                            <constraint firstItem="xea-3z-sQs" firstAttribute="leading" secondItem="vTE-Q4-BJJ" secondAttribute="leading" constant="8" id="8bx-2p-euZ"/>
+                            <constraint firstItem="d02-A0-Jtn" firstAttribute="top" secondItem="hpw-KI-SVU" secondAttribute="top" id="Bvd-aD-7PQ"/>
+                            <constraint firstItem="hpw-KI-SVU" firstAttribute="trailing" secondItem="d02-A0-Jtn" secondAttribute="trailing" id="EP6-G9-Equ"/>
+                            <constraint firstAttribute="trailing" secondItem="xea-3z-sQs" secondAttribute="trailing" constant="8" id="IDJ-QR-7wG"/>
+                            <constraint firstItem="hpw-KI-SVU" firstAttribute="trailing" secondItem="8rj-re-vtZ" secondAttribute="trailing" constant="16" id="JC5-lR-2JE"/>
+                            <constraint firstItem="d02-A0-Jtn" firstAttribute="bottom" secondItem="8rj-re-vtZ" secondAttribute="bottom" constant="25" id="QhY-sJ-aXn"/>
+                            <constraint firstItem="hpw-KI-SVU" firstAttribute="bottom" secondItem="d02-A0-Jtn" secondAttribute="bottom" id="TnU-r6-BFc"/>
+                            <constraint firstItem="hpw-KI-SVU" firstAttribute="bottom" secondItem="xea-3z-sQs" secondAttribute="bottom" constant="20" id="e0x-B7-kJc"/>
+                            <constraint firstItem="d02-A0-Jtn" firstAttribute="leading" secondItem="hpw-KI-SVU" secondAttribute="leading" id="z4O-gN-KrS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hpw-KI-SVU"/>
+                    </view>
+                    <connections>
+                        <outlet property="ARSupportLabel" destination="xea-3z-sQs" id="pvB-nn-a3v"/>
+                        <outlet property="loadARButton" destination="8rj-re-vtZ" id="IS4-aW-Jsh"/>
+                        <outlet property="sceneView" destination="d02-A0-Jtn" id="Y2c-Fd-JFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQs-fR-op7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="98"/>
+        </scene>
+        <!--Book Core Virus View Controller-->
+        <scene sceneID="TTO-Sf-uur">
+            <objects>
+                <viewController storyboardIdentifier="VirusViewController" id="bzA-ys-unt" customClass="BookCore_VirusViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdp-8Q-p1w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" loops="NO" sceneName="Virus.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dt-Yn-H3d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NZl-fO-agJ" firstAttribute="trailing" secondItem="0dt-Yn-H3d" secondAttribute="trailing" id="7V1-FF-wKR"/>
+                            <constraint firstItem="0dt-Yn-H3d" firstAttribute="leading" secondItem="NZl-fO-agJ" secondAttribute="leading" id="G88-AK-qeV"/>
+                            <constraint firstItem="0dt-Yn-H3d" firstAttribute="top" secondItem="NZl-fO-agJ" secondAttribute="top" id="aHa-yH-tB2"/>
+                            <constraint firstItem="NZl-fO-agJ" firstAttribute="bottom" secondItem="0dt-Yn-H3d" secondAttribute="bottom" id="r8S-n2-RHi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NZl-fO-agJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="0dt-Yn-H3d" id="o7n-bP-lgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sb-gj-FnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="98"/>
+        </scene>
+        <!--Book CoreAR View Controller-->
+        <scene sceneID="cy1-Mm-zGl">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Gf8-wZ-clG" customClass="BookCore_ARViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Hd-Sw-AeM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="DNA.scn" jitteringEnabled="YES" allowsCameraControl="YES" wantsMultisampling="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGn-nc-TYD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detecting surfaces.. Move the device around" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vua-ap-QHM">
+                                <rect key="frame" x="16" y="626" width="343" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vjW-4Y-u1p" firstAttribute="trailing" secondItem="EGn-nc-TYD" secondAttribute="trailing" id="5Rl-3h-XfQ"/>
+                            <constraint firstItem="EGn-nc-TYD" firstAttribute="leading" secondItem="vjW-4Y-u1p" secondAttribute="leading" id="OMh-wk-g0K"/>
+                            <constraint firstItem="EGn-nc-TYD" firstAttribute="top" secondItem="vjW-4Y-u1p" secondAttribute="top" id="arE-hI-PNI"/>
+                            <constraint firstItem="vjW-4Y-u1p" firstAttribute="bottom" secondItem="EGn-nc-TYD" secondAttribute="bottom" id="fYz-cX-p14"/>
+                            <constraint firstItem="vjW-4Y-u1p" firstAttribute="bottom" secondItem="vua-ap-QHM" secondAttribute="bottom" constant="20" id="j1r-Sp-pFz"/>
+                            <constraint firstItem="vua-ap-QHM" firstAttribute="leading" secondItem="vjW-4Y-u1p" secondAttribute="leading" constant="16" id="n4E-VI-PQH"/>
+                            <constraint firstItem="vjW-4Y-u1p" firstAttribute="trailing" secondItem="vua-ap-QHM" secondAttribute="trailing" constant="16" id="tIO-GE-fB0"/>
+                            <constraint firstItem="vua-ap-QHM" firstAttribute="centerX" secondItem="5Hd-Sw-AeM" secondAttribute="centerX" id="zvy-Lt-cUU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vjW-4Y-u1p"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VDs-5f-TDc"/>
+                    <connections>
+                        <outlet property="sceneView" destination="EGn-nc-TYD" id="qxs-OO-0F5"/>
+                        <outlet property="statusLabel" destination="vua-ap-QHM" id="vUX-f3-v8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7H-Bc-Y4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="858.62068965517244"/>
+        </scene>
+        <!--Book CoreRNAAR View Controller-->
+        <scene sceneID="cjU-q2-Xw3">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="UDG-rl-Sbc" customClass="BookCore_RNAARViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2w-LO-0tN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTO-MY-1tk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detecting surfaces.. Move the device around" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in9-I7-CWq">
+                                <rect key="frame" x="16" y="626" width="343" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VDb-Pz-E14" firstAttribute="trailing" secondItem="in9-I7-CWq" secondAttribute="trailing" constant="16" id="Hx2-0Y-fG3"/>
+                            <constraint firstItem="OTO-MY-1tk" firstAttribute="leading" secondItem="VDb-Pz-E14" secondAttribute="leading" id="MAb-fJ-YTs"/>
+                            <constraint firstItem="in9-I7-CWq" firstAttribute="leading" secondItem="OTO-MY-1tk" secondAttribute="trailing" constant="-359" id="Plh-bd-Win"/>
+                            <constraint firstItem="VDb-Pz-E14" firstAttribute="trailing" secondItem="OTO-MY-1tk" secondAttribute="trailing" id="X6E-DW-WBH"/>
+                            <constraint firstItem="in9-I7-CWq" firstAttribute="leading" secondItem="VDb-Pz-E14" secondAttribute="leading" constant="16" id="kpx-rX-MqN"/>
+                            <constraint firstItem="VDb-Pz-E14" firstAttribute="bottom" secondItem="in9-I7-CWq" secondAttribute="bottom" constant="20" id="nMx-DJ-hNe"/>
+                            <constraint firstItem="VDb-Pz-E14" firstAttribute="bottom" secondItem="OTO-MY-1tk" secondAttribute="bottom" id="puQ-Q5-ycw"/>
+                            <constraint firstItem="OTO-MY-1tk" firstAttribute="top" secondItem="VDb-Pz-E14" secondAttribute="top" id="s4m-7h-CCO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VDb-Pz-E14"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G09-kB-WUe"/>
+                    <connections>
+                        <outlet property="sceneView" destination="OTO-MY-1tk" id="gWe-Fi-PsW"/>
+                        <outlet property="statusLabel" destination="in9-I7-CWq" id="Rf1-Wa-DWG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxM-NS-AeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arkit" catalog="system" width="64" height="64"/>
+    </resources>
+</document>

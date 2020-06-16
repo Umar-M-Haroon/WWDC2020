@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Terms</key>
+		<dict>
+			<key>The Central Dogma</key>
+			<dict>
+				<key>Definition</key>
+				<string>The essential idea in all cells regarding how DNA is transformed into a functional product</string>
+				<key>FirstUse</key>
+				<string>Chapter1/Page%201</string>
+			</dict>
+			<key>DNA</key>
+			<dict>
+				<key>Definition</key>
+				<string>A molecule that is structured as a double helix. Composed of 2 strands with the bases A, T, G, and C </string>
+				<key>FirstUse</key>
+				<string>Chapter1/DNA</string>
+			</dict>
+			<key>Base Pair</key>
+			<dict>
+				<key>Definition</key>
+				<string>A set of 2 bases bonded together. Possible pairs in DNA include A to T, G and C. Possible pairs in RNA include A to U and G to C. </string>
+				<key>FirstUse</key>
+				<string>Chapter1/DNA</string>
+			</dict>
+			<key>Transcription</key>
+			<dict>
+				<key>Definition</key>
+				<string>The transofmration of DNA to RNA. Requires specific cell machinery to convert </string>
+				<key>FirstUse</key>
+				<string>Chapter1/RNA</string>
+			</dict>
+			<key>RNA</key>
+			<dict>
+				<key>Definition</key>
+				<string>A single stranded molecule extremely similar to DNA. Composed of 2 strands with the bases A, U, G, and C. Has many possible shapes due to the lack of a second stabilizing strand.</string>
+				<key>FirstUse</key>
+				<string>Chapter1/RNA</string>
+			</dict>
+			<key>Codon</key>
+			<dict>
+				<key>Definition</key>
+				<string>A sequence of 3 RNA bases that code for an amino acid. Multiple codons when linked together form a protein.</string>
+				<key>FirstUse</key>
+				<string>Chapter1/RNA</string>
+			</dict>
+		</dict>
+	</dict>
+</plist>

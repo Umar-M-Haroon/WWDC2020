@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>ChapterOneName</string>
+	<key>Pages</key>
+	<array>
+		<string>Page 1.playgroundpage</string>
+		<string>DNA.playgroundpage</string>
+		<string>DNA Exercise.playgroundpage</string>
+		<string>RNA.playgroundpage</string>
+		<string>Transcription Exercise.playgroundpage</string>
+		<string>The Role of SARS-CoV-2.playgroundpage</string>
+	</array>
+</dict>
+</plist>

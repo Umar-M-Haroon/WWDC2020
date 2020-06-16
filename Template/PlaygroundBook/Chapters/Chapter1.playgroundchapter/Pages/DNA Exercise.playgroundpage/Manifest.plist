@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>SpoilerButtonTitle</key>
+			<string>Show Hint</string>
+			<key>Content</key>
+			<string>A pairs with T, G pairs with C</string>
+		</dict>
+	</array>
+	<key>PlaygroundLoggingMode</key>
+	<string>Normal</string>
+	<key>Name</key>
+	<string>A DNA Exercise</string>
+	<key>LiveViewEdgeToEdge</key>
+	<true/>
+	<key>LiveViewMode</key>
+	<string>VisibleByDefault</string>
+</dict>
+</plist>
